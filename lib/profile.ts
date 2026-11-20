@@ -33,7 +33,7 @@ interface Project {
   stack: string[];
   repo: string;
   demo: string;
-  image: { src: string; alt: string };
+  images: { src: string; alt: string }[];
 }
 
 interface SkillGroup {
@@ -234,7 +234,7 @@ export const projects: Project[] = [
     blurb:
       "Self-hosted portfolio dashboard across brokers, with Claude as the analyst.",
     description:
-      "Tracks my portfolio from broker exports: holdings, closed positions, sold puts and dividends, valued every day with market prices and ECB exchange rates. It is also a remote MCP server behind passkey and OAuth sign-in, so Claude can log trades and investment theses from a chat, each one confirmed before it is saved.",
+      "Every broker exports in its own format, which always made one portfolio across brokers hard to track. Marktperspectief parses DEGIRO's and Saxo's exports into a single ledger of holdings, closed positions, sold puts and dividends, valued every day with market prices and ECB exchange rates. It is also a remote MCP server behind passkey and OAuth sign-in, so Claude can log trades and investment theses from a chat, each one confirmed before it is saved.",
     stack: [
       "Next.js",
       "TypeScript",
@@ -246,10 +246,20 @@ export const projects: Project[] = [
     ],
     repo: "https://github.com/SerDiuK/marktperspectief",
     demo: "https://marktperspectief-demo.vercel.app",
-    image: {
-      src: "/marktperspectief.png",
-      alt: "Marktperspectief's overview of the demo portfolio: value, returns against the Stoxx 600 and a chart since 2021",
-    },
+    images: [
+      {
+        src: "/marktperspectief-overview.png",
+        alt: "The demo portfolio's overview: value, returns and a chart against the Stoxx 600",
+      },
+      {
+        src: "/marktperspectief-holdings.png",
+        alt: "The holdings table, with each position's thesis type, weight, result and three-month trend",
+      },
+      {
+        src: "/marktperspectief-thesis.png",
+        alt: "Heineken's panel: price chart, position figures and its thesis, with what would prove each pillar wrong",
+      },
+    ],
   },
 ];
 
