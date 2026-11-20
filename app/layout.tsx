@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Open_Sans, Oswald } from "next/font/google";
 import "./globals.css";
@@ -41,7 +42,10 @@ export default function RootLayout({
       data-theme="cv"
       className={`${oswald.variable} ${openSans.variable} antialiased`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
