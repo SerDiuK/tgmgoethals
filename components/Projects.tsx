@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { projects } from "@/lib/profile";
 import { Entry, Section, Tags } from "./Section";
+import { ArrowUpRight, LogoGitHub } from "./icons";
 
 export function Projects() {
   return (
@@ -24,6 +26,35 @@ export function Projects() {
                 {project.description}
               </p>
               <Tags tags={project.stack} className="mt-5" />
+              <div className="relative mt-8 aspect-video bg-neutral">
+                <Image
+                  src={project.image.src}
+                  alt={project.image.alt}
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 75vw, 676px"
+                  className="object-cover"
+                />
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary btn-sm"
+                >
+                  <LogoGitHub className="h-4 w-4" />
+                  GitHub
+                </a>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline btn-sm"
+                >
+                  Try the demo
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
+              </div>
             </Entry>
           </li>
         ))}

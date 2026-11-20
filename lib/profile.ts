@@ -31,6 +31,9 @@ interface Project {
   blurb: string;
   description: string;
   stack: string[];
+  repo: string;
+  demo: string;
+  image: { src: string; alt: string };
 }
 
 interface SkillGroup {
@@ -228,7 +231,8 @@ export const projects: Project[] = [
   {
     name: "Marktperspectief",
     period: "2026",
-    blurb: "Personal investment dashboard with a Claude connector.",
+    blurb:
+      "Self-hosted portfolio dashboard across brokers, with Claude as the analyst.",
     description:
       "Tracks my portfolio from broker exports: holdings, closed positions, sold puts and dividends, valued every day with market prices and ECB exchange rates. It is also a remote MCP server behind passkey and OAuth sign-in, so Claude can log trades and investment theses from a chat, each one confirmed before it is saved.",
     stack: [
@@ -240,6 +244,12 @@ export const projects: Project[] = [
       "MCP",
       "Vercel",
     ],
+    repo: "https://github.com/SerDiuK/marktperspectief",
+    demo: "https://marktperspectief-demo.vercel.app",
+    image: {
+      src: "/marktperspectief.png",
+      alt: "Marktperspectief's overview of the demo portfolio: value, returns against the Stoxx 600 and a chart since 2021",
+    },
   },
 ];
 
