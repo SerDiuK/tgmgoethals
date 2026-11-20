@@ -1,0 +1,120 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "cv";
+  default: true;
+  color-scheme: light;
+  --color-base-100: #ffffff;
+  --color-base-200: #f3f6f7;
+  --color-base-300: #e1e7ea;
+  --color-base-content: #231f20;
+  --color-primary: #24485c;
+  --color-primary-content: #ffffff;
+  --color-secondary: #f9ab1c;
+  --color-secondary-content: #231f20;
+  --color-accent: #f9ab1c;
+  --color-accent-content: #231f20;
+  --color-neutral: #231f20;
+  --color-neutral-content: #ffffff;
+  --color-info: #24485c;
+  --color-info-content: #ffffff;
+  --color-success: #2f7d5c;
+  --color-success-content: #ffffff;
+  --color-warning: #f9ab1c;
+  --color-warning-content: #231f20;
+  --color-error: #b3261e;
+  --color-error-content: #ffffff;
+  --radius-selector: 0.25rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+@theme inline {
+  --font-display: var(--font-oswald);
+  --font-sans: var(--font-open-sans);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5.5rem;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-content);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: color-mix(in oklch, var(--color-primary) 35%, transparent)
+    transparent;
+}
+
+.rise {
+  opacity: 0;
+  animation: rise 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* scroll-reveal — progressive enhancement only, so content is never
+   hidden on browsers without scroll-driven animation support */
+@keyframes reveal {
+  from {
+    opacity: 0;
+    transform: translateY(2.25rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      opacity: 0;
+      animation: reveal both linear;
+      animation-timeline: view();
+      animation-range: entry 2% cover 24%;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise {
+    animation: none;
+    opacity: 1;
+  }
+}
