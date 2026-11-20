@@ -17,7 +17,7 @@ export function Navbar() {
         <a
           href="#top"
           className="flex items-center gap-3"
-          aria-label={`${profile.name} — back to top`}
+          aria-label={`${profile.name}, back to top`}
         >
           <LogoMark className="h-7 w-auto" />
           <span className="font-display text-xl font-bold">{profile.name}</span>

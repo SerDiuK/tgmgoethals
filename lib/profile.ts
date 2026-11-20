@@ -66,11 +66,11 @@ export const profile = {
   company: "CardNexus",
   location: "Barcelona, Catalonia",
   tagline:
-    "Senior full-stack engineer and tech lead, previously at Kahoot! — twelve years of building web products.",
+    "Senior full-stack engineer and tech lead with twelve years of building web products, previously at Kahoot!",
   summary: [
     "Tech lead and full-stack engineer. As founding engineer at CardNexus, a trading card marketplace with 100k+ users, I picked technologies and built features end to end across the Next.js web app, the Node.js and PostgreSQL backend and the React Native app, and drove SEO, shopping feeds and ad attribution.",
     "Before that I led a 6–7 person product team at Kahoot! as tech lead, after years of data-heavy Angular work at WeMaintain, Renault Digital and Diabolocom, where I led a team of three. Along the way I've mentored engineers and interviewed candidates. I trained in applied visual arts, and I work best close to design and product.",
-    "Day to day I build AI-first, with Claude Code, custom agent skills and MCP servers.",
+    "Day to day I build with Claude Code, custom agent skills and MCP servers.",
   ],
 };
 
@@ -107,16 +107,16 @@ export const jobs: Job[] = [
   {
     company: "CardNexus",
     location: "Barcelona, Spain",
-    period: "Feb 2025 — Present",
+    period: "Feb 2025 – Present",
     current: true,
     blurb:
       "Trading card marketplace and collection manager, web and mobile, with 100k+ users.",
-    roles: [{ title: "Founding Engineer", period: "Feb 2025 — Present" }],
+    roles: [{ title: "Founding Engineer", period: "Feb 2025 – Present" }],
     highlights: [
-      "Built price negotiation between buyers and sellers, end to end on web and mobile: API, cart and checkout, chat and notifications. Also led unique cards (signed, altered and misprint copies).",
+      "Built price negotiation between buyers and sellers, end to end on web and mobile: API, cart and checkout, chat and notifications. Also led unique cards: signed, altered and misprint copies.",
       "Led ad attribution, showing which ads drive sales: server-side conversion APIs for Meta, Reddit and TikTok, deduplicated against the browser pixels; Google Ads enhanced conversions; first- and last-touch UTM attribution; AppsFlyer with SKAN and deep links.",
       "Got listings in front of shoppers on Google and Meta: set up the Merchant Center and catalog feeds for the EU and US, updated in near real time, and handled most of the technical SEO for hundreds of thousands of product pages.",
-      "Built much of the web app: the original user service, inventory and import tools, lists, a drag-and-drop binder view. Set up the design system (Storybook, Figma tokens) and built 20+ of its components.",
+      "Built much of the web app: the original user service, inventory and import tools, lists, a drag-and-drop binder view. Set up the design system with Storybook and Figma tokens, and built 20+ of its components.",
       "Chose and set up the services for chat, notifications and cookie consent: Stream Chat, Novu, and Termly with Google Consent Mode v2.",
       "Looked after quality: reviewed 195 pull requests, mostly for the React Native app, and wrote end-to-end tests for the Stripe checkout.",
     ],
@@ -141,11 +141,11 @@ export const jobs: Job[] = [
   {
     company: "Kahoot!",
     location: "Barcelona, Spain",
-    period: "Jul 2022 — Feb 2025",
+    period: "Jul 2022 – Feb 2025",
     blurb: "Game-based learning platform used by millions worldwide.",
     roles: [
-      { title: "Technical Lead", period: "Nov 2023 — Feb 2025" },
-      { title: "Senior Frontend Developer", period: "Jul 2022 — Nov 2023" },
+      { title: "Technical Lead", period: "Nov 2023 – Feb 2025" },
+      { title: "Senior Frontend Developer", period: "Jul 2022 – Nov 2023" },
     ],
     highlights: [
       "Led a 6–7 person product team as tech lead, mentoring its engineers and interviewing candidates.",
@@ -157,24 +157,24 @@ export const jobs: Job[] = [
   {
     company: "WeMaintain",
     location: "Paris, then remote",
-    period: "Jul 2020 — Jul 2022",
+    period: "Jul 2020 – Jul 2022",
     blurb:
-      "Tech-enabled lift maintenance — engineers' craft paired with predictive technology.",
+      "Tech-enabled lift maintenance, with engineers backed by predictive technology.",
     roles: [
-      { title: "Staff Engineer", period: "Jul 2021 — Jul 2022" },
-      { title: "Senior Frontend Developer", period: "Jul 2020 — Jul 2021" },
+      { title: "Staff Engineer", period: "Jul 2021 – Jul 2022" },
+      { title: "Senior Frontend Developer", period: "Jul 2020 – Jul 2021" },
     ],
     highlights: [
-      "Built data-rich interfaces for elevator maintenance in an Nx monorepo, with d3.js visualisations and in-browser PDF display and editing.",
+      "Built data-rich interfaces for lift maintenance in an Nx monorepo, with d3.js visualisations and in-browser PDF display and editing.",
     ],
     stack: ["Angular", "NGXS", "d3.js", "Nx"],
   },
   {
     company: "Renault Digital",
     location: "Paris, France",
-    period: "Apr 2019 — Jul 2020",
+    period: "Apr 2019 – Jul 2020",
     blurb: "The Renault group's digital arm.",
-    roles: [{ title: "Senior Frontend Developer", period: "Apr 2019 — Jul 2020" }],
+    roles: [{ title: "Senior Frontend Developer", period: "Apr 2019 – Jul 2020" }],
     highlights: [
       "Built visualisations of vehicle lifecycles and live telemetry for an autonomous-vehicle project.",
       "Mentored two Simplon trainees through a six-month placement in the team.",
@@ -184,11 +184,11 @@ export const jobs: Job[] = [
   {
     company: "Diabolocom",
     location: "Paris, France",
-    period: "Jul 2017 — Mar 2019",
+    period: "Jul 2017 – Mar 2019",
     blurb: "Cloud contact-centre and telephony software.",
     roles: [
-      { title: "Lead Frontend Developer", period: "Mar 2018 — Mar 2019" },
-      { title: "Frontend Developer", period: "Jul 2017 — Mar 2018" },
+      { title: "Lead Frontend Developer", period: "Mar 2018 – Mar 2019" },
+      { title: "Frontend Developer", period: "Jul 2017 – Mar 2018" },
     ],
     highlights: [
       "Led three frontend engineers across Paris and Russia on the company's contact-centre software, and interviewed candidates.",
@@ -199,12 +199,12 @@ export const jobs: Job[] = [
     company: "European Commission JRC",
     via: "via Cronos International",
     location: "Geel, Belgium",
-    period: "Jun 2016 — Jul 2017",
+    period: "Jun 2016 – Jul 2017",
     blurb: "A frontend consulting placement through Cronos International.",
     roles: [
       {
         title: "Frontend Developer",
-        period: "Jun 2016 — Jul 2017",
+        period: "Jun 2016 – Jul 2017",
         description: "Financial applications in Angular.",
       },
     ],
@@ -213,12 +213,12 @@ export const jobs: Job[] = [
   {
     company: "Strak Design",
     location: "Antwerp, Belgium",
-    period: "Sep 2014 — Aug 2016",
+    period: "Sep 2014 – Aug 2016",
     blurb: "My own freelance design studio.",
     roles: [
       {
         title: "Founder & Web Designer",
-        period: "Sep 2014 — Aug 2016",
+        period: "Sep 2014 – Aug 2016",
         description:
           "Designed and built professional, responsive websites for small businesses.",
       },
@@ -344,6 +344,6 @@ export const education: School[] = [
   {
     institution: "Thomas More University of Applied Sciences",
     field: "BSc, Agro- and Biotechnology",
-    period: "2013 — 2016",
+    period: "2013 – 2016",
   },
 ];

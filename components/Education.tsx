@@ -6,7 +6,7 @@ export function Education() {
     <Section
       id="education"
       title="Education"
-      intro="A bachelor's in agro- and biotechnology — the software I taught myself alongside it."
+      intro="A bachelor's in agro- and biotechnology. I taught myself to code alongside it."
       bar="secondary"
     >
       <ul className="divide-y divide-base-content/10 border-y border-base-content/10">

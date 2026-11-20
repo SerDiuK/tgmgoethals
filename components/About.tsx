@@ -30,10 +30,7 @@ export function About() {
           </blockquote>
           <figcaption className="mt-3">
             <span className="block font-display text-lg font-light text-base-content/70">
-              — Kent Beck
-            </span>
-            <span className="mt-4 block text-sm font-semibold text-base-content/60">
-              Twelve years, sharpened on real work
+              Kent Beck
             </span>
           </figcaption>
         </figure>

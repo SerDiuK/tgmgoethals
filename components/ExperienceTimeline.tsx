@@ -6,7 +6,7 @@ export function ExperienceTimeline() {
     <Section
       id="experience"
       title="Work experience"
-      intro="Twelve years across Barcelona, Paris and Belgium — from data-rich Angular interfaces to a full-stack marketplace on web and mobile."
+      intro="Twelve years across Barcelona, Paris and Belgium, from data-rich Angular interfaces to a full-stack marketplace on web and mobile."
     >
       <ol className="divide-y divide-base-content/10 border-y border-base-content/10">
         {jobs.map((job) => (

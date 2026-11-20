@@ -8,7 +8,7 @@ export function Languages() {
     <Section
       id="languages"
       title="Language skills"
-      intro="Two native, two at a professional level — enough to feel at home across Belgium, France and Spain."
+      intro="Native Dutch and English, plus professional French and Spanish."
       bar="secondary"
       tone="tint"
     >

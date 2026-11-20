@@ -16,9 +16,9 @@ const SITE_URL = "https://tgmgoethals.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Thomas Goethals — Full-Stack Engineer & Tech Lead",
+  title: "Thomas Goethals · Full-Stack Engineer & Tech Lead",
   description:
-    "Senior full-stack engineer and tech lead in Barcelona. Founding engineer at CardNexus, previously tech lead at Kahoot! — twelve years of building web products.",
+    "Senior full-stack engineer and tech lead in Barcelona with twelve years of building web products. Founding engineer at CardNexus, previously tech lead at Kahoot!",
   authors: [{ name: "Thomas Goethals" }],
   alternates: { canonical: "/" },
   openGraph: {

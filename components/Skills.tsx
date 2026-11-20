@@ -6,7 +6,7 @@ export function Skills() {
     <Section
       id="skills"
       title="Key skills"
-      intro="The working toolkit — full-stack TypeScript across web, backend and mobile, built on deep Angular roots, with the data-visualisation and design instincts kept just as sharp."
+      intro="Full-stack TypeScript across web, backend and mobile, with years of Angular behind it, plus data visualisation and design."
     >
       <dl className="divide-y divide-base-content/10 border-y border-base-content/10">
         {skillGroups.map((group) => (
